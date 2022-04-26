@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>ZYDSB</title>
+    <style>
+        #title {
+            color: white;
+            text-align: center;
+            font-size: 500%;
+        }
+    </style>
 </head>
-<body>
-    <p>zydsb!</p>
+<body style="background: black">
+<!--妈妈说了，如果你写不出漂亮的网站，那么何妨试一试摆烂的网站设计呢？-->
+<h1 id="title">
+    Z Y D S B ! ! !
+</h1>
+<script>
+    const title = document.getElementById("title");
+    const color_list = ["white", "blue", "green", "yellow", "red", "purple", "orange"];
+
+    function change() {
+        title.style.color = color_list[Math.round(Math.random() * 7)];
+        title.style.fontSize = ((Math.round(Math.random() * 11) * 2) + 490).toString()+"%" ;
+
+    }
+    setInterval(change, 150)
+
+</script>
 </body>
 </html>
