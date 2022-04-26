@@ -4,27 +4,94 @@
     <meta charset="UTF-8">
     <title>ZYDSB</title>
     <style>
+        body {
+            background: black;
+        }
+
         #title {
             color: white;
-            text-align: center;
             font-size: 500%;
+            text-align: center;
         }
+
+        .context {
+            margin: 5px;
+            padding: 15px;
+            border: 3px solid #4e0000;
+            float: left;
+            width: 46%;
+        }
+
+        p {
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        #proof {
+            text-align: center;
+            margin: 5px;
+            padding: 15px;
+            border: 3px solid #4e0000;
+            width: 95%;
+            float: left;
+        }
+
     </style>
 </head>
-<body style="background: black">
+<body>
 <!--妈妈说了，如果你写不出漂亮的网站，那么何妨试一试摆烂的网站设计呢？-->
 <h1 id="title">
     Z Y D S B ! ! !
 </h1>
+
+<div style="text-align: center; width: 100%;">
+    <div>
+        <div class="context">
+
+            <h2>男酮头子zyd</h2>
+
+
+            <p>
+                丁香盛开香满城，</br>
+                哈九中里有男酮。</br>
+                试问其名是几何？</br>
+                多弟大名天下扬！
+            </p>
+
+        </div>
+        <div class="context">
+            <h2>
+                老二刺螈zyd
+            </h2>
+            <p> QQ头像一天一张，</br>
+                全是涩图不带重样。</br>
+                奈何都是纸片里的，</br>
+                看再多次也不给上。
+            </p>
+        </div>
+    </div>
+</div>
+<div>
+<div id="proof">
+    <h2>论述</h2>
+    <p>
+        众所周知zyd是男酮，而且外星人是紫色的，但派大星和海绵宝宝一起去抓水母了。而且依古比古的毯子好像是红色的，打碎后加入蒜末爆香，味道老人孩子都爱吃的家常菜就做好啦。但是还要考虑zyd是二刺螈，首先鲤鱼要跃龙门必须要37°的雷雨天气，而且海绵宝宝的宠物叫小窝，拍点蒜炒香老人小孩都喜欢吃，敏感肌也可以用。虽然植物进行光合作用需要叶绿素，但是从食盐提纯的过程看来，解这个三元二次方程组我们得从秦始皇灭六国说起。综上所述，zyd是sb！！！</p>
+</div>
+</div>
+
+
 <script>
     const title = document.getElementById("title");
     const color_list = ["white", "blue", "green", "yellow", "red", "purple", "orange"];
 
     function change() {
         title.style.color = color_list[Math.round(Math.random() * 7)];
-        title.style.fontSize = ((Math.round(Math.random() * 11) * 2) + 490).toString()+"%" ;
-
+        title.style.fontSize = ((Math.round(Math.random() * 11) * 2) + 490).toString() + "%";
     }
+
     setInterval(change, 150)
 
 </script>
