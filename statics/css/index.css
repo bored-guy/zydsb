@@ -82,9 +82,13 @@ h2 {
     margin: 5px;
     padding: 15px;
     border: 3px solid #4e0000;
-    width: 95%;
+
 }
 img{
     width: 100%;
     object-fit: cover;
+}
+#bottom{
+    color: cornflowerblue;
+    text-align: center;
 }
