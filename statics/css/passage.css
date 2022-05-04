@@ -1,0 +1,86 @@
+body{
+    background: darkgray;
+    margin: 0;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+p{
+    margin: 0;
+}
+
+#head{
+    background: black;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    position: relative;
+}
+#head-context{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#logo{
+    font-size: 40px;
+    flex:50%;
+    color: white;
+    text-align: left;
+}
+
+#guide{
+    flex: 50%;
+}
+.guideeee{
+    float: right;
+    font-size: 25px;
+    display: inline;
+    margin:2%;
+}
+.guideeee a:link{
+    color:white;
+    text-decoration: blink;
+}
+.guideeee a:visited{
+    color: white;
+    text-decoration: blink;
+}
+.guideeee a:hover{
+    color: white;
+    text-decoration: blink;
+}
+.guideeee a:active{
+    color: white;
+    text-decoration: blink;
+}
+
+#body{
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    height: 90%;
+    padding-top: 1%;
+}
+
+#left{
+    margin: 1%;
+    padding: 2%;
+    flex: 30%;
+    background: dimgray;
+    border: 1px solid black;
+}
+
+#right{
+    margin: 1%;
+    padding: 2%;
+    flex: 70%;
+    background: dimgray;
+    border: 1px solid black;
+}

@@ -89,6 +89,19 @@ img{
     object-fit: cover;
 }
 #bottom{
-    color: cornflowerblue;
     text-align: center;
+    display: flex;
+    display: -webkit-flex;
+}
+#leftbottom{
+    color: lightseagreen;
+    flex: 50%;
+    text-align: center;
+    font-size: 25px;
+}
+#rightbottom{
+    color: cornflowerblue;
+    flex: 50%;
+    text-align: center;
+
 }
