@@ -60,7 +60,7 @@ p{
     text-decoration: blink;
 }
 
-#body{
+#main{
     width: 80%;
     display: flex;
     flex-flow: row;

@@ -14,35 +14,85 @@
             width: 100%;
             height: 100%;
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat;}
+
+        .alert_box {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 900;
+            width: 100%;
+            height: 100%;}
+
+        .alert_bg {
+            width: 100%;
+            height: 100%;
+            background: #333;
+            opacity: 0.7;
+        }
+
+        .alert_con {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 400px;
+            height: 250px;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 8px;
+            text-align: center;
         }
     </style>
+
 </head>
 <body>
-<div id="head">
-    <div id="head-context">
-        <div id="logo">
-            <p>zydsb</p>
-        </div>
-        <div id="guide">
-            <div class="guideeee"><a href="all_passage.html">全部文章</a></div>
-            <div class="guideeee"><a href="about.html"> 关于zydsb</a></div>
-            <div class="guideeee"><a href="index.html">主页</a></div>
-        </div>
-    </div>
-</div>
-<div id="body">
-    <div id="right">
-        <div id="image_box">
 
-        </div>
-        <div style="text-align: center;">
-            <button id="change" style="width: 90px;height: 40px;font-size: 18px">换一个！</button>
-        </div>
-    </div>
+<div class="alert_box" id="big_alert">
+
 </div>
-<script>
-    first_get()
-</script>
+
+        <div id="head">
+            <div id="head-context">
+                <div id="logo">
+                    <p>zydsb</p>
+                </div>
+                <div id="guide">
+                    <div class="guideeee"><a href="all_passage.html">全部文章</a></div>
+                    <div class="guideeee"><a href="about.html"> 关于zydsb</a></div>
+                    <div class="guideeee"><a href="index.html">主页</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="right">
+                <div id="image_box">
+                </div>
+                <div style="text-align: center;">
+                    <button id="change" style="width: 90px;height: 40px;font-size: 18px">换一个！</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            let cook = document.cookie
+            cook=cook.split(";")
+            console.log(cook)
+            if(cook.includes("pass_test=true")){
+                first_get()
+                console.log("a")
+            }
+            else{
+                document.getElementById("big_alert").innerHTML = "<div class=\"alert_bg\"></div>\n" +
+                    "    <div class=\"alert_con\" id=\"alert\">\n" +
+                    "        </br>\n" +
+                    "        <p style=\"font-family: Arial,sans-serif;font-size: 40px;font-weight: bold\">WARNING!</p>\n" +
+                    "        <p style=\"color: red;font-size: 17px\">本页面包含敏感内容，未满18岁请自行离开</p>\n" +
+                    "        <br>\n" +
+                    "        <button onclick=\"question()\" style=\"height: 15%;width: 70%; font-size: 20px; background: limegreen;border-radius: 4px\">我已满十八岁，继续</button><br><br>\n" +
+                    "        <button onclick=\"leave()\" style=\"height: 15%;width: 70%; font-size: 20px;background: #ff0404; border-radius: 4px\">我未满十八岁，离开</button>\n" +
+                    "    </div>"
+            }
+        </script>
+
 </body>
 </html>
