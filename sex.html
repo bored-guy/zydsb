@@ -47,11 +47,11 @@
 
 </head>
 <body>
+<div id="outer">
 
-<div class="alert_box" id="big_alert">
+
 
 </div>
-
         <div id="head">
             <div id="head-context">
                 <div id="logo">
@@ -82,7 +82,7 @@
                 console.log("a")
             }
             else{
-                document.getElementById("big_alert").innerHTML = "<div class=\"alert_bg\"></div>\n" +
+                document.getElementById("outer").innerHTML = "<div class=\"alert_box\" id=\"big_alert\"><div class=\"alert_bg\"></div>\n" +
                     "    <div class=\"alert_con\" id=\"alert\">\n" +
                     "        </br>\n" +
                     "        <p style=\"font-family: Arial,sans-serif;font-size: 40px;font-weight: bold\">WARNING!</p>\n" +
@@ -90,7 +90,7 @@
                     "        <br>\n" +
                     "        <button onclick=\"question()\" style=\"height: 15%;width: 70%; font-size: 20px; background: limegreen;border-radius: 4px\">我已满十八岁，继续</button><br><br>\n" +
                     "        <button onclick=\"leave()\" style=\"height: 15%;width: 70%; font-size: 20px;background: #ff0404; border-radius: 4px\">我未满十八岁，离开</button>\n" +
-                    "    </div>"
+                    "    </div></div>"
             }
         </script>
 
