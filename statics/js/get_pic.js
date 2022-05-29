@@ -51,5 +51,7 @@ function check_question(){
     }
 }
 function leave(){
-    window.close()
+    window.opener=null;
+    window.open('','_self');
+    window.close();
 }
