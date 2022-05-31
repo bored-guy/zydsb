@@ -116,10 +116,7 @@ function change_time(){
     $("#time_line_two").append(year+"/"+month+"/"+day)
 
 }
-
-$(function () {
-    change_time()
-    change_the_height()
+function clear_the_window(){
     $("#body").empty()
     $("#body").append("<div class=\"page\">\n" +
         "        <div class=\"inside\">\n" +
@@ -127,6 +124,16 @@ $(function () {
         "            </div>\n" +
         "        </div>\n" +
         "    </div>")
+    times = 0
+    pages = 0
+    current_id = -1
+}
+$(function () {
+    change_time()
+    change_the_height()
+    $(window).keydown(function (event){
+        if(event.keyCode==8) clear_the_window()
+    })
     $(window).resize(function () {
         change_the_height()
     })
